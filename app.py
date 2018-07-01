@@ -3,14 +3,8 @@ from apistar import App, Route
 
 def welcome(name=None):
     if name is None:
-<<<<<<< HEAD
-        return {"message": "Welcome to API Andreas!"}
+        return {"message": "Welcome to API Andreas !"}
     return {"message": "Welcome to API Andreas, %s!" % name}
-=======
-        return {"message": "Welcome to API Andreas!!"}
-    return {"message": "Welcome to API Andreas, %s!\n" % name}
->>>>>>> 679a3a198d9301af285bbf18076256c23f717e0a
-
 
 routes = [Route("/", method="GET", handler=welcome)]
 
