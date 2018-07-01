@@ -2,6 +2,6 @@ version: '3'
 
 services:
   web:
-    image: andreas/python-example:latest
+    image: andreas5/python-example:latest
     ports:
       - "5000:5000"
