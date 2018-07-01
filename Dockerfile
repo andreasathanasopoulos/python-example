@@ -1,5 +1,6 @@
 FROM python:3.6
-RUN mkdir /code
+ADD requirements.txt /code/requirements.txt
 WORKDIR /code
+RUN pip install --no-cache-dir -r requirements.txt
 ADD . /code
-RUN pip install -r requirements.txt
+CMD python app.py
